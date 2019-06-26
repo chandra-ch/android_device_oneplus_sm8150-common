@@ -1,3 +1,4 @@
+genfscon proc  /touchpanel u:object_r:proc_touchpanel:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/display_mode u:object_r:sysfs_displayengine_tuneable:s0
 genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/display_mode u:object_r:sysfs_displayengine_tuneable:s0
 

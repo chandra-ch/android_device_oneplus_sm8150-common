@@ -408,3 +408,7 @@ PRODUCT_PACKAGES += \
 # DisplayEngine
 PRODUCT_PACKAGES += \
     aoscp.displayengine@1.0-service.oneplus_msmnile
+
+# Touch
+PRODUCT_PACKAGES += \
+    aoscp.touch@1.0-service.oneplus_msmnile
