@@ -9,4 +9,13 @@
         </interface>
         <fqname>@1.0::IAtCmdFwd/AtCmdFwdService</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.aoscp.displayengine</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </manifest>

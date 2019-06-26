@@ -1,3 +1,5 @@
+# Data files
+/data/misc/display(/.*)?      u:object_r:display_misc_file:s0
 
 # Files in rootfs
 /bt_firmware(/.*)?       u:object_r:bt_firmware_file:s0
@@ -7,3 +9,5 @@
 /op1(/.*)?               u:object_r:op1_file:s0
 /op2(/.*)?               u:object_r:op2_file:s0
 
+# HALs
+/system/bin/hw/aoscp\.displayengine@1\.0-service\.oneplus_msmnile    u:object_r:hal_displayengine_msmnile_exec:s0

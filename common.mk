@@ -405,3 +405,6 @@ PRODUCT_PACKAGES += \
     libxml2 \
     libprotobuf-cpp-full
 
+# DisplayEngine
+PRODUCT_PACKAGES += \
+    aoscp.displayengine@1.0-service.oneplus_msmnile

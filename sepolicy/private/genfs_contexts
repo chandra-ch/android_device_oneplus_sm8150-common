@@ -1,0 +1,4 @@
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@18/display_mode u:object_r:sysfs_displayengine_tuneable:s0
+genfscon sysfs /devices/platform/soc/soc:qcom,dsi-display@21/display_mode u:object_r:sysfs_displayengine_tuneable:s0
+
+genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/display_mode u:object_r:sysfs_displayengine_tuneable:s0

@@ -1,0 +1,15 @@
+type hal_displayengine_msmnile, coredomain, domain;
+hal_server_domain(hal_displayengine_msmnile, hal_aoscp_displayengine)
+
+type hal_displayengine_msmnile_exec, exec_type, file_type;
+init_daemon_domain(hal_displayengine_msmnile)
+
+# Talk to the binder device node
+allow hal_displayengine_msmnile binder_device:chr_file rw_file_perms;
+
+# Allow DisplayEngine to store files under /data/misc/display and access them
+allow hal_displayengine_msmnile display_misc_file:dir rw_dir_perms;
+allow hal_displayengine_msmnile display_misc_file:file create_file_perms;
+
+# Grant access over DisplayEngine tuneables
+allow hal_displayengine_msmnile sysfs_displayengine_tuneable:file rw_file_perms;
