@@ -18,7 +18,7 @@ $(call inherit-product-if-exists, vendor/oneplus/sm8150-common/sm8150-common-ven
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
 	$(LOCAL_PATH)/overlay \
-	$(LOCAL_PATH)/overlay-lineage \
+	$(LOCAL_PATH)/overlay-aoscp
 
 # AID/fs configs
 PRODUCT_PACKAGES += \
@@ -118,7 +118,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.camera.provider@2.4-impl \
 	android.hardware.camera.provider@2.4-service_64 \
 	libxml2 \
-	Snap \
+	Snap
 
 # CNE
 PRODUCT_PACKAGES += \
@@ -224,7 +224,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keylayout/fpc1020.kl:system/usr/keylayout/fpc1020.kl \
 	$(LOCAL_PATH)/keylayout/gf_input.kl:system/usr/keylayout/gf_input.kl \
-	$(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	$(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -245,10 +245,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.light@2.0-service.oneplus_msmnile
 
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-	vendor.lineage.livedisplay@2.0-service
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -319,10 +315,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	textclassifier.bundle1
 
-# Trust HAL
-PRODUCT_PACKAGES += \
-	vendor.lineage.trust@1.0-service
-
 # VNDK-SP
 PRODUCT_PACKAGES += \
 	vndk_package
@@ -336,7 +328,7 @@ AB_OTA_PARTITIONS += \
 	dtbo \
 	system \
 	vendor \
-	vbmeta \
+	vbmeta
 
 AB_OTA_POSTINSTALL_CONFIG += \
 	RUN_POSTINSTALL_system=true \
@@ -356,7 +348,7 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 	bootctrl.msmnile \
 	libcutils \
 	libgptutils \
-	libz \
+	libz
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -370,7 +362,6 @@ PRODUCT_COPY_FILES += \
 
 # Tri-state keys
 PRODUCT_PACKAGES += \
-	KeyHandler \
 	tri-state-key_daemon
 
 # TextClassifier
